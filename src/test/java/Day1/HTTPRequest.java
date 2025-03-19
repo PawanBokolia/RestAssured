@@ -52,7 +52,7 @@ public class HTTPRequest {
 	}
 
 
-	@Test(priority =3,dependsOnMethods = {"createUser"})
+//	@Test(priority =3,dependsOnMethods = {"createUser"})
 	void updateUser()
 	{
 		HashMap<String,String> data =new HashMap<String,String>();

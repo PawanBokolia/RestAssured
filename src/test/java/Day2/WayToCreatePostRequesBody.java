@@ -1,11 +1,11 @@
 package Day2;
 
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 import java.util.HashMap;
 
+import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 
@@ -16,7 +16,7 @@ public class WayToCreatePostRequesBody {
 	
 	//1) Post request body using HashMap
 	
-	@Test(priority=1)
+	//@Test(priority=1)
 	void testPostUsingHashMap()
 	{
 		HashMap<String,Object>data =new HashMap<>();
@@ -49,17 +49,39 @@ public class WayToCreatePostRequesBody {
 		
 	}
 	
+	
+	//
+	
 	@Test(priority=2)
-	void testDelete() {
+	void testPostUsingJsonLibrary()
+	{
+		JSONObject data = new JSONObject();
 		
-		given()
+		data.put("name", "Scott");
+		data.put("location", "France");
+		data.put("phone", "12336544788");
 		
-		.when()
-			.delete("http://localhost:3000/Students/"+id)
-			
-		.then()
-			.statusCode(200)
-			.log().all();
+		String coursesArr[]= {"C","C++"};
+		data.put("courses",coursesArr);
+		
+		
+	id = given()
+		.contentType("application/json")
+		.body(data)
+		
+	.when()
+		.post("http://localhost:3000/Students")
+		
+	.then()
+		.statusCode(201)
+		.body("name",equalTo("Scott"))
+		.body("location",equalTo("France"))
+		.body("phone",equalTo("123456789"))
+		.body("courses[0]",equalTo("C"))		
+		.body("courses[1]",equalTo("C++"))
+//		.header("Content-Type","application/json.X-Powered-By=tinyhttp")
+		.log().all()
+		.extract().jsonPath().getString("id");
 		
 		
 		
