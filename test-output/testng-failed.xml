@@ -5,8 +5,7 @@
     <classes>
       <class name="Day2.WayToCreatePostRequesBody">
         <methods>
-          <include name="testPostUsingHashMap"/>
-          <include name="testDelete"/>
+          <include name="testPostUsingJsonLibrary"/>
         </methods>
       </class> <!-- Day2.WayToCreatePostRequesBody -->
     </classes>
