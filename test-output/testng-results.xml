@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T18:08:15 IST" name="Default suite" finished-at="2025-07-22T18:08:18 IST" duration-ms="2280">
+  <suite started-at="2025-07-23T15:32:56 IST" name="Default suite" finished-at="2025-07-23T15:32:59 IST" duration-ms="3113">
     <groups>
     </groups>
-    <test started-at="2025-07-22T18:08:15 IST" name="Default test" finished-at="2025-07-22T18:08:18 IST" duration-ms="2280">
-      <class name="Day2.WayToCreatePostRequesBody">
-        <test-method signature="testPostUsingExternalJsonFile()[pri:4, instance:Day2.WayToCreatePostRequesBody@41e36e46]" started-at="2025-07-22T18:08:16 IST" name="testPostUsingExternalJsonFile" finished-at="2025-07-22T18:08:18 IST" duration-ms="2226" status="PASS">
+    <test started-at="2025-07-23T15:32:56 IST" name="Default test" finished-at="2025-07-23T15:32:59 IST" duration-ms="3113">
+      <class name="Day3.CookeiesDemo">
+        <test-method signature="getCookiesinfo()[pri:0, instance:Day3.CookeiesDemo@41e36e46]" started-at="2025-07-23T15:32:56 IST" name="getCookiesinfo" finished-at="2025-07-23T15:32:59 IST" duration-ms="3050" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingExternalJsonFile -->
-      </class> <!-- Day2.WayToCreatePostRequesBody -->
+        </test-method> <!-- getCookiesinfo -->
+      </class> <!-- Day3.CookeiesDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
