@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T09:13:38 IST" name="Default suite" finished-at="2025-07-29T09:13:39 IST" duration-ms="1494">
+  <suite started-at="2025-08-09T18:14:56 IST" name="Default suite" finished-at="2025-08-09T18:15:00 IST" duration-ms="4023">
     <groups>
     </groups>
-    <test started-at="2025-07-29T09:13:38 IST" name="Default test" finished-at="2025-07-29T09:13:39 IST" duration-ms="1494">
-      <class name="Day4.ParsingJSONResponseData">
-        <test-method signature="testJsonResponse()[pri:1, instance:Day4.ParsingJSONResponseData@31304f14]" started-at="2025-07-29T09:13:38 IST" name="testJsonResponse" finished-at="2025-07-29T09:13:39 IST" duration-ms="1427" status="PASS">
+    <test started-at="2025-08-09T18:14:56 IST" name="Default test" finished-at="2025-08-09T18:15:00 IST" duration-ms="4023">
+      <class name="Day5.FileUploadAndDownload">
+        <test-method signature="singleFileUpload()[pri:1, instance:Day5.FileUploadAndDownload@31304f14]" started-at="2025-08-09T18:14:56 IST" name="singleFileUpload" finished-at="2025-08-09T18:14:59 IST" duration-ms="3875" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJsonResponse -->
-        <test-method signature="testJsonResponseBodyData()[pri:2, instance:Day4.ParsingJSONResponseData@31304f14]" started-at="2025-07-29T09:13:39 IST" name="testJsonResponseBodyData" finished-at="2025-07-29T09:13:39 IST" duration-ms="27" status="PASS">
+        </test-method> <!-- singleFileUpload -->
+        <test-method signature="fileDownload()[pri:2, instance:Day5.FileUploadAndDownload@31304f14]" started-at="2025-08-09T18:14:59 IST" name="fileDownload" finished-at="2025-08-09T18:15:00 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJsonResponseBodyData -->
-      </class> <!-- Day4.ParsingJSONResponseData -->
+        </test-method> <!-- fileDownload -->
+      </class> <!-- Day5.FileUploadAndDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
