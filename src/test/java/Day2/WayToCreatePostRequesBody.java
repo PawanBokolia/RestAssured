@@ -32,7 +32,7 @@ public class WayToCreatePostRequesBody {
 		
 		data.put("courses", coursesArr);
 		
-		 given()
+	given()
 		.contentType("application/json")
 		.body(data)					
 		
