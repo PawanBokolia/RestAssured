@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-10T10:39:17 IST" name="Default suite" finished-at="2025-08-10T10:39:19 IST" duration-ms="2702">
+  <suite started-at="2025-08-10T12:42:41 IST" name="Default suite" finished-at="2025-08-10T12:42:41 IST" duration-ms="270">
     <groups>
     </groups>
-    <test started-at="2025-08-10T10:39:17 IST" name="Default test" finished-at="2025-08-10T10:39:19 IST" duration-ms="2702">
-      <class name="Day6.JSONSchemaValitdations">
-        <test-method signature="jsonSchemaValidation()[pri:0, instance:Day6.JSONSchemaValitdations@7c7b252e]" started-at="2025-08-10T10:39:17 IST" name="jsonSchemaValidation" finished-at="2025-08-10T10:39:19 IST" duration-ms="2642" status="PASS">
+    <test started-at="2025-08-10T12:42:41 IST" name="Default test" finished-at="2025-08-10T12:42:41 IST" duration-ms="270">
+      <class name="Day6.SerializationAndDeserialization">
+        <test-method signature="convertJson2Pojo()[pri:0, instance:Day6.SerializationAndDeserialization@4d5d943d]" started-at="2025-08-10T12:42:41 IST" name="convertJson2Pojo" finished-at="2025-08-10T12:42:41 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsonSchemaValidation -->
-      </class> <!-- Day6.JSONSchemaValitdations -->
+        </test-method> <!-- convertJson2Pojo -->
+      </class> <!-- Day6.SerializationAndDeserialization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
