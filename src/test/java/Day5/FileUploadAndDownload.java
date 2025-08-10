@@ -27,9 +27,6 @@ public class FileUploadAndDownload {
 				.statusCode(200)
 				.body("fileName", equalTo("Opencart_loginData.xlsx"))
 				.log().all();		
-
-	
-	
 	
 	}
 	
@@ -39,7 +36,7 @@ public class FileUploadAndDownload {
 		File myfile1 = new File("D:\\Testing\\Opencart_loginData.xlsx");
 		File myfile2 = new File("D:\\Testing\\DataDriven.csv");
 		
-		File filearr[]= {myfile1,myfile2};		//this approach wont work every time it depends on the developer 
+//		File filearr[]= {myfile1,myfile2};		//this approach wont work every time it depends on the developer 
 		
 		given()
 			.multiPart("files",myfile1)  			 //.multipart("files",filearr)
