@@ -1,0 +1,9 @@
+#Target-Folder
+/target/
+
+
+#output
+/test-output/
+
+#token
+\src\test\resources\Restassured_token.properties\
