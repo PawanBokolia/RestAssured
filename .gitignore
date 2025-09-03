@@ -6,4 +6,4 @@
 /test-output/
 
 #token
-Restassured_token.properties/
+src/test/resources/Restassured_token.properties
