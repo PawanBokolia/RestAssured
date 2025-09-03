@@ -7,6 +7,18 @@ public class POJO_postRequest {
 	String phone;
 	String courses[];
 	
+/*
+	public POJO_postRequest(String name,String location,String phone,String courses[])   if use this we dont need to use set data and we all add default/ non perametalized constructor
+	{
+		this.name=name;
+		this.location=location;
+		this.phone=phone;
+		this.courses=courses;
+	}
+*/	
+	
+
+
 	public String getName() 
 	{
 		return name;

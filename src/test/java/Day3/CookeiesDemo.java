@@ -14,7 +14,6 @@ public class CookeiesDemo {
 	void testCookies() {
 
 		given()
-
 				.when().get("https://www.google.com/").then()
 				.cookie("AEC", "AVh_V2gNImjNVC6y788Gq5ChoVGDRIFLZIyMk2t8AXk9oOM9-Fa65igO7w").log().all();
 

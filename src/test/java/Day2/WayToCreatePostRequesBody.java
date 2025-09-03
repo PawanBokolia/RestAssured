@@ -107,11 +107,13 @@ public class WayToCreatePostRequesBody {
 
 	// 3) Post request body using POJO (Plain old java object) 
 	
-//	@Test(priority= 3 )
+	@Test(priority= 3 )
 	void testPostUsingPOJO()
 	{
-		POJO_postRequest data= new POJO_postRequest();
 		
+//		POJO_postRequest data= new POJO_postRequest("Scott","France","123456789" , new String[] {"C","C++"} );  //this can be used if we add constructor in POJO
+		
+		POJO_postRequest data= new POJO_postRequest();
 		data.setName("Scott");
 		data.setLocation("France");
 		data.setPhone("123456789");
@@ -119,7 +121,7 @@ public class WayToCreatePostRequesBody {
 		String coursesArr[]= {"C","C++"};
 		
 		data.setCourses(coursesArr);
-		
+
 	given()
 		.contentType("application/json")
 		.body(data)   		
@@ -141,7 +143,7 @@ public class WayToCreatePostRequesBody {
 	
 	
 	// 4) external json file 
-	@Test(priority= 4 )
+//	@Test(priority= 4 )
 	void testPostUsingExternalJsonFile() throws FileNotFoundException
 	{
 		

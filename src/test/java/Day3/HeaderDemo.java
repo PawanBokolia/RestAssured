@@ -18,10 +18,9 @@ public class HeaderDemo {
 		given()
 
 				.when().get("https://google.com")
-
-				.then().header("Content-Type", "text/html; charset=ISO-8859-1").and() // no need to but if you want to
+				.then().header("Content-Type", "text/html; charset=ISO-8859-1").and()	 // no need to but if you want to
 																						// seprate them you can use this
-				.header("Content-Encoding", "gzip").and() // no need to but if you want to seprate them you can use this
+				.header("Content-Encoding", "gzip").and() 								// no need to but if you want to seprate them you can use this
 				.header("Server", "gws");
 
 	}
